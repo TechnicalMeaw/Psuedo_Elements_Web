@@ -1,0 +1,52 @@
+.para p::before{
+    content: " ";
+    display: inline-block;
+    border: 5px solid black;
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+
+
+h1{
+    text-align: center;
+    position: relative;
+
+}
+
+.floating-underline{
+    text-align: center;
+}
+
+h1::after{
+    content: "";
+    display: block;
+    position: absolute;    
+    
+    bottom: -10px;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%);
+    border-bottom: 4px solid black;
+}
+
+.left-tick{
+    display: block;
+    width: 10px;
+    height: 2px;
+    border-bottom: 3px solid black;
+    transform: rotate(40deg);
+}
+
+.right-tick{
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-bottom: 3px solid black;
+    transform: rotate(-20deg);
+    bottom: 23px;
+    left: 7px;
+}
